@@ -8,7 +8,15 @@ export const ShowData = () => {
 
     return (
         <div>
-            Tela ShowData do {state.user.name} que tem {state.user.age}
+            <h3>Tela ShowData</h3>
+
+            {state.user.name &&
+                <>
+                    MEU NOME É: {state.user.name}<br />
+                    EU TENHO: {state.user.age} ANOS
+                </>
+            }
+            {!state.user.name && 'Não há informações'}
             <br />
             <Link to='/'>Voltar para SignUp</Link>
         </div>

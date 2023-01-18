@@ -5,8 +5,8 @@ import { Context } from '../contexts/Context'
 
 export const SignUp = () => {
     const { state, dispatch } = useContext(Context)
-    const [nameInput, setNameInput] = useState('')
-    const [ageInput, setAgeInput] = useState(0)
+    const [nameInput, setNameInput] = useState(state.user.name)
+    const [ageInput, setAgeInput] = useState(state.user.age)
 
     const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setNameInput(e.target.value)
