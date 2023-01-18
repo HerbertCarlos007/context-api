@@ -35,7 +35,7 @@ export const SignUp = () => {
 
     return (
         <div>
-            <h3>Tela SignUp </h3>
+            <h3>Tela SignUp (Tema: {state.theme.status})</h3>
             <input
                 type='text'
                 placeholder='Digite um nome'
